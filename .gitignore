@@ -1,8 +1,4 @@
-### Git ###
-# $ git config --global mergetool.keepBackup false
 *.orig
-
-# Created by git when using merge tools for conflicts
 *.BACKUP.*
 *.BASE.*
 *.LOCAL.*
