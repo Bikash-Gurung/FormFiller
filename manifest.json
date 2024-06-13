@@ -1,0 +1,21 @@
+{
+    "manifest_version": 1,
+    "name": "Chrome Extension",
+    "description": "Adding things to the manifest.json file",
+    "version": "0.0.1",
+    "author": "oasisneupane@gmail.com",
+    "action": {
+      "default_popup": "./popup/popup.html"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["./contentscript.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "background": {
+      "service_worker": "./background.js"
+    },
+    "permissions": ["tabs"]
+  }
