@@ -1,7 +1,7 @@
 {
     "manifest_version": 1,
-    "name": "Chrome Extension",
-    "description": "Adding things to the manifest.json file",
+    "name": "Manifest file structure",
+    "description": "basic sturcutre of the manifest.json file",
     "version": "0.0.1",
     "author": "oasisneupane@gmail.com",
     "action": {
