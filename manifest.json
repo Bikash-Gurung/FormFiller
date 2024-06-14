@@ -1,9 +1,8 @@
 {
-    "manifest_version": 1,
-    "name": "Manifest file structure",
-    "description": "basic sturcutre of the manifest.json file",
+    "manifest_version": 3,
+    "name": "FormFiller",
+    "description": "Fills out forms that you dont want to fill out. Adds the basic information",
     "version": "0.0.1",
-    "author": "oasisneupane@gmail.com",
     "action": {
       "default_popup": "./popup/popup.html"
     },
