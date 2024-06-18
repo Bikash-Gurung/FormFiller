@@ -4,11 +4,8 @@ button.addEventListener("click", sendMessageToContentscript);
 
 function sendMessageToContentscript() {
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-    chrome.tabs.sendMessage(
-      tabs[0].id,
-      {
-        message: "Form Filler Button Has Been Clicked",
-      }
-    );
+    chrome.tabs.sendMessage(tabs[0].id, {
+      command: "fill",
+    });
   });
 }
