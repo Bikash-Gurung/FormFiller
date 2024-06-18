@@ -1,5 +1,5 @@
-function handelMessages (e){
-    chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-        console.log("Input from js " + message);
-    });
-}
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+    if(request.command == "fill"){
+        console.log("Message recived.");
+    }
+});
