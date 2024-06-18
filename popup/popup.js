@@ -8,9 +8,6 @@ function sendMessageToContentscript() {
       tabs[0].id,
       {
         message: "Form Filler Button Has Been Clicked",
-      },
-      (response) => {
-        console.log(response.response);
       }
     );
   });
